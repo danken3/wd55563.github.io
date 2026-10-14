@@ -8,11 +8,38 @@
     <link rel="stylesheet" href="styles.css" type="text/css">
     <script src="scripts.js" defer></script>
 </head>
-<body>
+<body onload="renderTasks(), loadFromLocalStorage()">
+    <input type="text" id="task_filter" name="task_filter" placeholder="Filter tasks...">
 
+    <table>
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="task_list">
+            <tr>
+                <td>pieczenie</td>
+                <td>2026-10-14</td>
+                <td><button class="delete_task" onclick="deleteTask(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>sprzątanie</td>
+                <td>2026-10-15</td>
+                <td><button class="delete_task" onclick="deleteTask(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>gotowanie</td>
+                <td>2026-10-16</td>
+                <td><button class="delete_task" onclick="deleteTask(this)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
 
     <input type="text" id="task_name" name="task_name" placeholder="Enter task to do">
     <input type="date" id="task_date" name="task_date">
-    <button id="add_task">Add Task</button>
+    <button id="add_task" onclick="addTask()">Add Task</button>
 </body>
 </html>

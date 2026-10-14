@@ -1,3 +1,54 @@
 body {
   background-color: #f3fff3;
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+#task_filter {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 97%;
+}
+
+#task_name {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  padding: 5px;
+  width: 32%;
+}
+
+#task_date {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 31%;
+}
+
+#add_task {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  width: 32%;
+}
+
+mark {
+  background-color: yellow;
+  color: black;
+}
