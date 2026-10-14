@@ -125,6 +125,8 @@ function searchTasks() {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
+  loadFromLocalStorage();
+  
   document
     .getElementById('task_filter')
     .addEventListener('input', searchTasks);
